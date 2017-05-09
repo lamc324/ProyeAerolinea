@@ -1,0 +1,113 @@
+body {
+	background: #BDBDBD;
+	background-image: url(../imagenes/fondo.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#derecha{
+	text-align:right;
+}
+
+ .overlay{
+	display: none; position: absolute;
+	top: 0%; left: 0%;
+	width: 150%; height: 150%;
+	background-color: lightgray;
+	z-index:1; opacity:.70;
+ }
+ 
+ .popup {
+	display: none; position: absolute;
+	top: 50%; left: 25%;
+	width: 50%; height: 26%;
+	padding: 5px;
+	border: 5px solid lightgray;
+	background-color: lightgray;
+	z-index:2;
+ }
+ 
+#regresarD{
+	 width: 20px; height: 20px;
+	border: 2px solid lightgray;
+    background-color: #ffffff;
+	background-image:url(../imagenes/x.png);
+}
+
+.imagen{
+	text-align:center;
+}
+
+.menu{
+	background: #D8D8D8;
+}
+.etiquetaTitle {
+	background-color: #061146;
+	color: #ffffff;
+}
+
+.etiqueta {
+	color: #061146;
+}
+
+#precio{
+	width: 70px; height:17px;
+}
+
+
+.titulo{
+	font-weight: bold;
+	text-align:center;
+	background-color: #061146;
+	color: #ffffff;
+}
+
+.botones{
+	font-weight: bold;
+	text-align:center;
+	
+}
+
+.boton{
+	border: 2px solid lightgray;
+    border-radius: 10px;
+	background-color: #ffffff;
+	color: #061146;
+}
+
+
+.number{
+	width: 40px; height:17px;
+}
+
+.s{
+	width: 65px; height:17px;
+}
+
+.grid{
+	border: 2px solid #61210B;
+	
+}
+
+
+
+input[type="text"].focus {background-color:pink;}
+input[type="text"].nofocus {background-color:white;}
+
+input.invalid {box-shadow: 0 0 5px 1px red;}
+
+table.grid{border:1px solid white; border-collapse: collapse;}
+table.grid thead tr {border:1px solid black; background-color: #061146; color: white;}
+table.grid thead tr th{border:inherit;}
+table.grid tbody tr{border:1px solid black; background: #8A0808;}
+table.grid tbody tr:nth-child(odd) {background: #E0F2F7;}
+table.grid tbody tr:nth-child(even) {background: #58FAD0;}
+table.grid tbody tr:hover {background: #81DAF5;}
+table.grid tbody tr td{border:inherit;}
+
+table.detalle{border:1px solid white; border-collapse: collapse;}
+table.detalle tbody tr{border:1px solid black; background:  #F6D8CE;}
+table.detalle tbody tr td{border:inherit;}
+table.detalle tbody tr#vuelo{border:inherit; background-color: #FFBF00}

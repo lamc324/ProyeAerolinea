@@ -1,0 +1,25 @@
+body {
+	background-color : blue;
+	background-image: url(../images/Avion.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.boton{
+	font-size:25px;
+    border-radius: 10px;
+}
+
+.titulo{
+	font-weight: bold;
+	text-align:center;
+}
+
+table tbody tr{color:white;}
+input[type="text"].focus {background-color:#F5ECCE;}
+input[type="text"].nofocus {background-color:white;}
+input.invalid {box-shadow: 0 0 5px 1px red;}
+
+

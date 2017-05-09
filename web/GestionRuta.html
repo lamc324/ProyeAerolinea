@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Gestion de Ruta</title>
+  <link rel="stylesheet" title="pink" type="text/css" href="css/estiloRuta.css">
+  <script type="text/javascript" src="js/Ruta.js"></script>
+    <script type="text/javascript" src="js/Ciudad.js"></script>
+	  <script type="text/javascript" src="js/Horario.js"></script>
+  <script type="text/javascript" src="js/StorageRuta.js"></script>
+  <script type="text/javascript" src="js/validacionRuta.js"></script>
+</head>
+	<body>
+	<form method="POST" name="formulario" id="formulario" action="javascript:doSubmit();">
+	 	<div id="formularioDiv" class="container-fluid">
+		<div class="row">
+		
+
+			<div class="col-sm-4">
+	
+		
+			<table  class= "tabla" cellpadding=3 cellspacing=4 >
+				<tr><td colspan="4" class="titulo">Gestion de Rutas</td></tr>
+				<tr><td colspan="4" class="etiqueta">Id: <input class= "number" type="text" name="id" id="id"></td><td></td></tr>
+				</div>
+			
+				
+			<div class="col-sm-4">
+				<tr><td colspan="4" class="titulo">Ruta </td></tr>
+				<tr><td class="etiqueta">Lugar de Origen: </td><td><Select name="lOrigen" id="lOrigen"></td>
+				<td class="etiqueta">Lugar de Destino:</td><td> <Select name="lDestino" id="lDestino"> </td></tr>
+				</div>
+				<table>
+				
+				
+			
+			<div class="col-sm-4">
+			<table  class= "tabla" cellpadding=3 cellspacing=4 >
+				<tr><td colspan="4" class="etiqueta">Duracion: <input class= "number" type="number" name="duracion" id="duracion" min="0">
+				<Select name="dur" id="dur">
+									<Option Selected value="hrs">hrs</Option>
+									<Option value="min">min</Option></td></tr>
+				
+				<tr><td colspan="4" class="titulo" >Horario</td></tr>
+				
+				<tr ><td  class="etiqueta">Fecha de Salida: </td></tr>
+
+				<tr><td class="etiqueta">Dia: <input type="date" name="fechSalida" id="fechSalida"></td>
+				<td class="etiqueta">Hora: <input type="time" name="horaSalida" id="horaSalida"; ></td></tr>
+				<tr><td colspan="4" class="etiquetaTitle"></td></tr>
+					
+				<tr><td class="etiqueta" >Precio: $ <input type="text" name="precio" id="precio" >  </td></tr>
+					
+				<tr><td  colspan = "4" class="botones"><input class="boton" type="reset" value="Limpiar"> <input class="boton" type="submit" value="Agregar"></td></tr>
+				</div>
+			</table>
+		</form>		
+	</div>
+</div>
+	
+	
+	<div id="sections" class="container-fluid"  id = "div">
+		<div class="row">
+			<div class="col-sm-5">
+				<table>
+					<thead><tr><th>Id</th><th>Orig</th><th>Dest</th><th>Fecha Salida</th><th>Hora Salida</th><th>Fecha Llegada</th><th>Hora Llegada</th><th>Duracion</th><th>Precio</th><th>...</th></tr></thead>
+					<tbody id="listado"></tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	</body>
+</html>

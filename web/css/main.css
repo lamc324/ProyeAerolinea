@@ -1,0 +1,58 @@
+*{
+	margin:0px;
+	padding:0px;	
+}
+
+#div{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	background-color:#000;
+}
+
+#header{
+	background-color:#F3F5F7;
+	text-align:right;
+}
+
+#logo{
+	
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menuElement{
+	font-size:28px;
+	margin-left:10px;
+}
+
+h3{
+	color:white;
+}
+
+#login{
+	background-color:grey;
+	margin-left:10%;
+	margin-right:10%;
+}
+
+h1{
+	color:white;
+}
+
+.boton{
+	text-align:center;
+	font-size:25px;
+    border-radius: 10px;
+}
+
+#letra{
+	color:#D8D8D8;
+	
+}
+
+input[type="text"].focus {background-color:#F5ECCE;}
+input[type="text"].nofocus {background-color:white;}
+input.invalid {box-shadow: 0 0 5px 1px red;}
+

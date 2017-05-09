@@ -1,0 +1,52 @@
+body {
+	background: #BDBDBD;
+	background-image: url(../imagenes/horario.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.etiquetaTitle {
+	background-color: #061146;
+	color: #ffffff;
+}
+
+.etiqueta {
+	color: #061146;
+}
+
+#precio{
+	width: 70px; height:17px;
+}
+
+
+.titulo{
+	font-weight: bold;
+	text-align:center;
+	background-color: #061146;
+	color: #ffffff;
+}
+
+.botones{
+	font-weight: bold;
+	text-align:center;
+	
+}
+
+.boton{
+	border: 2px solid lightgray;
+    border-radius: 10px;
+	background-color: #ffffff;
+	color: #061146;
+}
+
+.number{
+	width: 40px; height:17px;
+}
+
+input[type="text"].focus {background-color:pink;}
+input[type="text"].nofocus {background-color:white;}
+
+input.invalid {box-shadow: 0 0 5px 1px red;}
+

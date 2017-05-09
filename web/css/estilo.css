@@ -1,0 +1,71 @@
+body {
+	background: #BDBDBD;
+	background-image: url(../imagenes/horario.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+
+
+.tabla{
+	background: url(../imagenes/5.jpg) no-repeat;
+}
+.etiquetaTitle {
+	background-color: #061146;
+	color: #ffffff;
+}
+
+.etiqueta {
+	color: #061146;
+}
+
+#precio{
+	width: 70px; height:17px;
+}
+
+
+.titulo{
+	font-weight: bold;
+	text-align:center;
+	background-color: #061146;
+	color: #ffffff;
+}
+
+.botones{
+	font-weight: bold;
+	text-align:center;
+	
+}
+
+.boton{
+	border: 2px solid lightgray;
+    border-radius: 10px;
+	background-color: #ffffff;
+	color: #061146;
+}
+
+#tdMasc {
+	width: 20px; height:20px;
+	background-image:url(../images/male.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.number{
+	width: 40px; height:17px;
+}
+
+#tdFem {
+	width: 20px; height:20px;
+	background-image:url(../images/female.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+input[type="text"].focus {background-color:pink;}
+input[type="text"].nofocus {background-color:white;}
+
+input.invalid {box-shadow: 0 0 5px 1px red;}
+

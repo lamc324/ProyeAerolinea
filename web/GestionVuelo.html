@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Gestion Vuelo</title>
+  <link rel="stylesheet" title="vuelo" type="text/css" href="css/estiloVuelo.css">
+  <script type="text/javascript" src="js/Horario.js"></script>
+  <script type="text/javascript" src="js/Ruta.js"></script>
+  <script type="text/javascript" src="js/Avion.js"></script>
+  <script type="text/javascript" src="js/Vuelo.js"></script>
+    <script type="text/javascript" src="js/Ciudad.js"></script>
+  <script type="text/javascript" src="js/validationVuelo.js"></script>
+  
+  <script type="text/javascript" src="js/StorageVuelo.js"></script>
+</head>
+<body>
+	<div id="formularios"  border= "2px solid red" style="display:inline-block";>
+		
+		<div id="listadoDivAvion" style="display: block; vertical-align:top;">
+			<table class="menu">
+			<tr><td colspan="5" class= "titulo">Avion:</td></tr>
+			<tr><td class= "etiqueta">Id: <input class= "s" type="text" name="idAvion" id="idAvion"></td> 
+				<td class= "etiqueta">Marca: <input class= "s" type="text" name="marcaAv" id="marcaAv"></td> 
+				<td class= "etiqueta">Modelo: <input class= "s" type="text" name="modAvion" id="modAvion"></td> 
+				<td class= "etiqueta">Cantidad de Pasajeros:<input class= "number" type="number" min= 0 name="cantPasAv" id="cantPasAv"></td> 
+				
+				<td><input class="boton" type="button" value="Buscar" id="buscarAvion"></td></tr>
+			</tr>
+			<tr><td colspan ="6"> <hr> </td></tr>
+			<tr><td colspan ="6">
+			<table class="grid">
+				<thead><tr><th># de Avion</th><th>Marca</th><th>Modelo</th><th> Año</th><th> Cantidad de Pasajeros</th><th> Cantidad de Filas</th><th>Cantidad de Asientos</th></tr></thead>
+				<tbody id="listadoAvion"></tbody>
+			</table>
+			</td>
+			</tr>
+			</table>
+		</div>	
+		<hr>
+		<div id="listadoDivRuta" style="display:inline-block;">
+			<table class="menu">
+			<tr><td colspan="5" class= "titulo">Ruta:</td></tr>
+			<tr><td colspan="2" class= "etiqueta" >Id: <input class= "s" type="text" name="idRuta" id="idRuta"></td> </tr>
+			<tr><td class= "etiqueta">Lugar de Origen: </td><td><Select name="lOrigen" id="lOrigen"></td>
+				<td class= "etiqueta">Lugar de Destino: </td><td><Select name="lDestino" id="lDestino"> </td> </tr>
+			<tr><td class= "etiqueta">Dia Salida: </td><td><input type="date" name="diaSalida" id="diaSalida"></td> 
+				 <td class= "etiqueta">Dia Llegada: </td><td><input type="date" name="diaLlegada" id="diaLlegada"></td></tr>
+			   <tr><td class= "etiqueta">Hora Salida: </td><td><input class= "number" type="number" min= 0 name="" id="horaSalida"></td> 
+				<td class= "etiqueta">Hora Llegada: </td><td><input class= "number" type="number" min= 0 name="horaLlegada" id="horaLlegada"></td> </tr>
+			
+			<tr>	<td><input class="boton" type="button" value="Buscar" id="buscarRuta"></td></tr>
+			<tr><td colspan ="6"> <hr> </td></tr>
+			<tr><td colspan ="6">
+			<table class="grid">
+				<thead><tr><th># Ruta</th><th>Ruta</th><th>Dia de Salida</th><th>Hora Salida</th><th>Dia de Llegada</th><th> Hora de Llegada</th><th>Duracion</th><th> Precio</th></tr></thead>
+				<tbody id="listadoRuta"></tbody>
+			</table>
+			</td>
+			</tr>
+			</table>
+		</div>	
+		
+		<hr>
+		<div style="display: inline-block;">
+		<form method="POST" name="formulario" id="formulario" action="javascript:doSubmit();">
+			<table class ="menu">
+			<tr><td class etiqueta> Id: <input class= "s" type="text" name="idVuelo" id="idVuelo"></td>
+				<td class etiqueta> Avion: </td><td><input class= "s" type="text" name="avionV" id="avionV"></td>
+				<td class etiqueta> Ruta: </td><td><input class= "s" type="text" name="rutaV" id="rutaV"></td></tr>
+			<tr><td colspan = "5"></td><td><input class="boton" type="submit" value="Agregar" id="agregar"></td></tr>
+			<tr><td colspan = "3"></td></tr>
+			<tr><td></td>	
+			<td colspan = "3">
+				<table class="grid">
+					<thead><tr><th>#Vuelo</th><th>Avion</th><th>Ruta</th><th>...</th></tr></thead>
+					<tbody id="listadoVuelo"></tbody>
+				</table>
+			</td>
+			</tr>
+			</table>
+		</form>
+		
+		</div>
+	
+	
+	<div id="o" class="overlay"></div>
+	
+	<div id="p" class="popup">
+		<table class="detalle">
+			<thead> <input type="button" id="regresarD"></thead>
+			<tbody id="listadoDetalles"></tbody>
+		</table>
+	</div>
+	
+	</div>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+
+
+
+
+#header{
+	background-color:#F3F5F7;
+	text-align:right;
+}
+
+#header2{
+	background-color:#808080;
+	
+}
+
+
+
+
+
+.titulo{
+	background-color: #B40404;
+	text-align:center;
+	color:white;
+		margin-left:23%;
+		margin-right:23%;
+}
+
+.parrafo{
+	background-color: #D8D8D8;
+	color:black;
+	margin-left:10%;
+	margin-right:10%;
+	text-align:center;
+}
+
+.cuerpo{
+	color: black;
+	text-align:center;
+}
+
+#logo{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+

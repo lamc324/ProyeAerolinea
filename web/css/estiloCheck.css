@@ -1,0 +1,76 @@
+
+
+body {
+	background: #BDBDBD;
+	background-image: url(../imagenes/6.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#listadoDiv{
+	display: inline-block; 
+	padding: 10%;
+	border: 0px;
+}
+
+#listado{
+	background-color:white;
+}
+.tit{
+	display: block; margin: 5px; border: 0px; height:75px; width:50%;
+}
+.grande{
+	display: block; 
+	border:0px; 
+	width:75%; 
+}
+
+.etiquetaTitle {
+	background-color: #061146;
+	color: #ffffff;
+}
+
+.etiqueta {
+	color: #061146;
+}
+
+#precio{
+	width: 70px; height:17px;
+}
+
+
+.titulo{
+	font-weight: bold;
+	text-align:center;
+	background-color: #061146;
+	color: #ffffff;
+}
+
+.botones{
+	font-weight: bold;
+	text-align:center;
+	
+}
+
+.boton{
+	border: 2px solid lightgray;
+    border-radius: 10px;
+	background-color: #ffffff;
+	color: #061146;
+}
+
+.reservado{
+	background-color: yellow;
+}
+
+.displonible{
+	background-color: green;
+}
+
+.ocupado{
+	background-color: red;
+}
+input.invalid {box-shadow: 0 0 5px 1px red;}
+
